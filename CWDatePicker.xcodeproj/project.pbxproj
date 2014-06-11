@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CE0089E1948533700BA31C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE0089D1948533700BA31C9 /* Foundation.framework */; };
+		4CE008A01948533700BA31C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE0089F1948533700BA31C9 /* CoreGraphics.framework */; };
+		4CE008A21948533700BA31C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE008A11948533700BA31C9 /* UIKit.framework */; };
+		4CE008A81948533800BA31C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CE008A61948533800BA31C9 /* InfoPlist.strings */; };
+		4CE008AA1948533800BA31C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008A91948533800BA31C9 /* main.m */; };
+		4CE008AE1948533800BA31C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008AD1948533800BA31C9 /* AppDelegate.m */; };
+		4CE008B01948533800BA31C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CE008AF1948533800BA31C9 /* Images.xcassets */; };
+		4CE008B71948533800BA31C9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE008B61948533800BA31C9 /* XCTest.framework */; };
+		4CE008B81948533800BA31C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE0089D1948533700BA31C9 /* Foundation.framework */; };
+		4CE008B91948533800BA31C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE008A11948533700BA31C9 /* UIKit.framework */; };
+		4CE008C11948533800BA31C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CE008BF1948533800BA31C9 /* InfoPlist.strings */; };
+		4CE008C31948533800BA31C9 /* CWDatePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008C21948533800BA31C9 /* CWDatePickerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CE008BA1948533800BA31C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CE008921948533700BA31C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CE008991948533700BA31C9;
+			remoteInfo = CWDatePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CE0089A1948533700BA31C9 /* CWDatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWDatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE0089D1948533700BA31C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CE0089F1948533700BA31C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4CE008A11948533700BA31C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4CE008A51948533800BA31C9 /* CWDatePicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CWDatePicker-Info.plist"; sourceTree = "<group>"; };
+		4CE008A71948533800BA31C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CE008A91948533800BA31C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CE008AB1948533800BA31C9 /* CWDatePicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CWDatePicker-Prefix.pch"; sourceTree = "<group>"; };
+		4CE008AC1948533800BA31C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4CE008AD1948533800BA31C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4CE008AF1948533800BA31C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4CE008B51948533800BA31C9 /* CWDatePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CWDatePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE008B61948533800BA31C9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4CE008BE1948533800BA31C9 /* CWDatePickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CWDatePickerTests-Info.plist"; sourceTree = "<group>"; };
+		4CE008C01948533800BA31C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CE008C21948533800BA31C9 /* CWDatePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWDatePickerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CE008971948533700BA31C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE008A01948533700BA31C9 /* CoreGraphics.framework in Frameworks */,
+				4CE008A21948533700BA31C9 /* UIKit.framework in Frameworks */,
+				4CE0089E1948533700BA31C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE008B21948533800BA31C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE008B71948533800BA31C9 /* XCTest.framework in Frameworks */,
+				4CE008B91948533800BA31C9 /* UIKit.framework in Frameworks */,
+				4CE008B81948533800BA31C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CE008911948533700BA31C9 = {
+			isa = PBXGroup;
+			children = (
+				4CE008A31948533700BA31C9 /* CWDatePicker */,
+				4CE008BC1948533800BA31C9 /* CWDatePickerTests */,
+				4CE0089C1948533700BA31C9 /* Frameworks */,
+				4CE0089B1948533700BA31C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CE0089B1948533700BA31C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CE0089A1948533700BA31C9 /* CWDatePicker.app */,
+				4CE008B51948533800BA31C9 /* CWDatePickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CE0089C1948533700BA31C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CE0089D1948533700BA31C9 /* Foundation.framework */,
+				4CE0089F1948533700BA31C9 /* CoreGraphics.framework */,
+				4CE008A11948533700BA31C9 /* UIKit.framework */,
+				4CE008B61948533800BA31C9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CE008A31948533700BA31C9 /* CWDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				4CE008AC1948533800BA31C9 /* AppDelegate.h */,
+				4CE008AD1948533800BA31C9 /* AppDelegate.m */,
+				4CE008AF1948533800BA31C9 /* Images.xcassets */,
+				4CE008A41948533800BA31C9 /* Supporting Files */,
+			);
+			path = CWDatePicker;
+			sourceTree = "<group>";
+		};
+		4CE008A41948533800BA31C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CE008A51948533800BA31C9 /* CWDatePicker-Info.plist */,
+				4CE008A61948533800BA31C9 /* InfoPlist.strings */,
+				4CE008A91948533800BA31C9 /* main.m */,
+				4CE008AB1948533800BA31C9 /* CWDatePicker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CE008BC1948533800BA31C9 /* CWDatePickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CE008C21948533800BA31C9 /* CWDatePickerTests.m */,
+				4CE008BD1948533800BA31C9 /* Supporting Files */,
+			);
+			path = CWDatePickerTests;
+			sourceTree = "<group>";
+		};
+		4CE008BD1948533800BA31C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CE008BE1948533800BA31C9 /* CWDatePickerTests-Info.plist */,
+				4CE008BF1948533800BA31C9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CE008991948533700BA31C9 /* CWDatePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE008C61948533800BA31C9 /* Build configuration list for PBXNativeTarget "CWDatePicker" */;
+			buildPhases = (
+				4CE008961948533700BA31C9 /* Sources */,
+				4CE008971948533700BA31C9 /* Frameworks */,
+				4CE008981948533700BA31C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CWDatePicker;
+			productName = CWDatePicker;
+			productReference = 4CE0089A1948533700BA31C9 /* CWDatePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CE008B41948533800BA31C9 /* CWDatePickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CE008C91948533800BA31C9 /* Build configuration list for PBXNativeTarget "CWDatePickerTests" */;
+			buildPhases = (
+				4CE008B11948533800BA31C9 /* Sources */,
+				4CE008B21948533800BA31C9 /* Frameworks */,
+				4CE008B31948533800BA31C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CE008BB1948533800BA31C9 /* PBXTargetDependency */,
+			);
+			name = CWDatePickerTests;
+			productName = CWDatePickerTests;
+			productReference = 4CE008B51948533800BA31C9 /* CWDatePickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CE008921948533700BA31C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					4CE008B41948533800BA31C9 = {
+						TestTargetID = 4CE008991948533700BA31C9;
+					};
+				};
+			};
+			buildConfigurationList = 4CE008951948533700BA31C9 /* Build configuration list for PBXProject "CWDatePicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4CE008911948533700BA31C9;
+			productRefGroup = 4CE0089B1948533700BA31C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CE008991948533700BA31C9 /* CWDatePicker */,
+				4CE008B41948533800BA31C9 /* CWDatePickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CE008981948533700BA31C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE008A81948533800BA31C9 /* InfoPlist.strings in Resources */,
+				4CE008B01948533800BA31C9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE008B31948533800BA31C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE008C11948533800BA31C9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CE008961948533700BA31C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE008AE1948533800BA31C9 /* AppDelegate.m in Sources */,
+				4CE008AA1948533800BA31C9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CE008B11948533800BA31C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE008C31948533800BA31C9 /* CWDatePickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CE008BB1948533800BA31C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CE008991948533700BA31C9 /* CWDatePicker */;
+			targetProxy = 4CE008BA1948533800BA31C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CE008A61948533800BA31C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CE008A71948533800BA31C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CE008BF1948533800BA31C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CE008C01948533800BA31C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CE008C41948533800BA31C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CE008C51948533800BA31C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CE008C71948533800BA31C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CWDatePicker/CWDatePicker-Prefix.pch";
+				INFOPLIST_FILE = "CWDatePicker/CWDatePicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4CE008C81948533800BA31C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CWDatePicker/CWDatePicker-Prefix.pch";
+				INFOPLIST_FILE = "CWDatePicker/CWDatePicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4CE008CA1948533800BA31C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CWDatePicker.app/CWDatePicker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CWDatePicker/CWDatePicker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CWDatePickerTests/CWDatePickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4CE008CB1948533800BA31C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CWDatePicker.app/CWDatePicker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CWDatePicker/CWDatePicker-Prefix.pch";
+				INFOPLIST_FILE = "CWDatePickerTests/CWDatePickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CE008951948533700BA31C9 /* Build configuration list for PBXProject "CWDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE008C41948533800BA31C9 /* Debug */,
+				4CE008C51948533800BA31C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CE008C61948533800BA31C9 /* Build configuration list for PBXNativeTarget "CWDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE008C71948533800BA31C9 /* Debug */,
+				4CE008C81948533800BA31C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4CE008C91948533800BA31C9 /* Build configuration list for PBXNativeTarget "CWDatePickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CE008CA1948533800BA31C9 /* Debug */,
+				4CE008CB1948533800BA31C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CE008921948533700BA31C9 /* Project object */;
+}
