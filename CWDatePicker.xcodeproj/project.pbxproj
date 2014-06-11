@@ -19,6 +19,20 @@
 		4CE008B91948533800BA31C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE008A11948533700BA31C9 /* UIKit.framework */; };
 		4CE008C11948533800BA31C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CE008BF1948533800BA31C9 /* InfoPlist.strings */; };
 		4CE008C31948533800BA31C9 /* CWDatePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008C21948533800BA31C9 /* CWDatePickerTests.m */; };
+		4CE008D31948537200BA31C9 /* CWDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008CE1948537200BA31C9 /* CWDatePicker.m */; };
+		4CE008D41948537200BA31C9 /* CWDatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008D01948537200BA31C9 /* CWDatePickerCell.m */; };
+		4CE008D51948537200BA31C9 /* CWDatePickerRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008D21948537200BA31C9 /* CWDatePickerRow.m */; };
+		4CE008D9194853BB00BA31C9 /* DatePickerExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008D8194853BB00BA31C9 /* DatePickerExampleViewController.m */; };
+		4CE008F51948555B00BA31C9 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008DF1948555B00BA31C9 /* MASCompositeConstraint.m */; };
+		4CE008F61948555B00BA31C9 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008E21948555B00BA31C9 /* MASConstraint.m */; };
+		4CE008F71948555B00BA31C9 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008E41948555B00BA31C9 /* MASConstraintMaker.m */; };
+		4CE008F81948555B00BA31C9 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008E61948555B00BA31C9 /* MASLayoutConstraint.m */; };
+		4CE008F91948555B00BA31C9 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008EA1948555B00BA31C9 /* MASViewAttribute.m */; };
+		4CE008FA1948555B00BA31C9 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008EC1948555B00BA31C9 /* MASViewConstraint.m */; };
+		4CE008FB1948555B00BA31C9 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008EE1948555B00BA31C9 /* NSArray+MASAdditions.m */; };
+		4CE008FC1948555B00BA31C9 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008F11948555B00BA31C9 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		4CE008FD1948555B00BA31C9 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE008F31948555B00BA31C9 /* View+MASAdditions.m */; };
+		4CFB9F2D19489BE40049E694 /* NSDate+CWDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB9F2C19489BE40049E694 /* NSDate+CWDatePicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +62,39 @@
 		4CE008BE1948533800BA31C9 /* CWDatePickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CWDatePickerTests-Info.plist"; sourceTree = "<group>"; };
 		4CE008C01948533800BA31C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4CE008C21948533800BA31C9 /* CWDatePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWDatePickerTests.m; sourceTree = "<group>"; };
+		4CE008CD1948537200BA31C9 /* CWDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWDatePicker.h; sourceTree = "<group>"; };
+		4CE008CE1948537200BA31C9 /* CWDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWDatePicker.m; sourceTree = "<group>"; };
+		4CE008CF1948537200BA31C9 /* CWDatePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWDatePickerCell.h; sourceTree = "<group>"; };
+		4CE008D01948537200BA31C9 /* CWDatePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWDatePickerCell.m; sourceTree = "<group>"; };
+		4CE008D11948537200BA31C9 /* CWDatePickerRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWDatePickerRow.h; sourceTree = "<group>"; };
+		4CE008D21948537200BA31C9 /* CWDatePickerRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWDatePickerRow.m; sourceTree = "<group>"; };
+		4CE008D7194853BB00BA31C9 /* DatePickerExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerExampleViewController.h; sourceTree = "<group>"; };
+		4CE008D8194853BB00BA31C9 /* DatePickerExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerExampleViewController.m; sourceTree = "<group>"; };
+		4CE008DE1948555B00BA31C9 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		4CE008DF1948555B00BA31C9 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		4CE008E01948555B00BA31C9 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		4CE008E11948555B00BA31C9 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		4CE008E21948555B00BA31C9 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		4CE008E31948555B00BA31C9 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		4CE008E41948555B00BA31C9 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		4CE008E51948555B00BA31C9 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		4CE008E61948555B00BA31C9 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		4CE008E71948555B00BA31C9 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		4CE008E81948555B00BA31C9 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		4CE008E91948555B00BA31C9 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		4CE008EA1948555B00BA31C9 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		4CE008EB1948555B00BA31C9 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		4CE008EC1948555B00BA31C9 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		4CE008ED1948555B00BA31C9 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		4CE008EE1948555B00BA31C9 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		4CE008EF1948555B00BA31C9 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		4CE008F01948555B00BA31C9 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		4CE008F11948555B00BA31C9 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		4CE008F21948555B00BA31C9 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		4CE008F31948555B00BA31C9 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		4CE008F41948555B00BA31C9 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		4CFB9F2B19489BE30049E694 /* NSDate+CWDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CWDatePicker.h"; sourceTree = "<group>"; };
+		4CFB9F2C19489BE40049E694 /* NSDate+CWDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CWDatePicker.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +154,9 @@
 		4CE008A31948533700BA31C9 /* CWDatePicker */ = {
 			isa = PBXGroup;
 			children = (
+				4CE008FE1948580600BA31C9 /* Utils */,
+				4CE008D61948539F00BA31C9 /* Example */,
+				4CE008CC1948537200BA31C9 /* CWDatePicker */,
 				4CE008AC1948533800BA31C9 /* AppDelegate.h */,
 				4CE008AD1948533800BA31C9 /* AppDelegate.m */,
 				4CE008AF1948533800BA31C9 /* Images.xcassets */,
@@ -142,6 +192,68 @@
 				4CE008BF1948533800BA31C9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CE008CC1948537200BA31C9 /* CWDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				4CE008CD1948537200BA31C9 /* CWDatePicker.h */,
+				4CE008CE1948537200BA31C9 /* CWDatePicker.m */,
+				4CE008D11948537200BA31C9 /* CWDatePickerRow.h */,
+				4CE008D21948537200BA31C9 /* CWDatePickerRow.m */,
+				4CE008CF1948537200BA31C9 /* CWDatePickerCell.h */,
+				4CE008D01948537200BA31C9 /* CWDatePickerCell.m */,
+			);
+			path = CWDatePicker;
+			sourceTree = "<group>";
+		};
+		4CE008D61948539F00BA31C9 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				4CE008D7194853BB00BA31C9 /* DatePickerExampleViewController.h */,
+				4CE008D8194853BB00BA31C9 /* DatePickerExampleViewController.m */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
+		4CE008DD1948555B00BA31C9 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				4CE008DE1948555B00BA31C9 /* MASCompositeConstraint.h */,
+				4CE008DF1948555B00BA31C9 /* MASCompositeConstraint.m */,
+				4CE008E01948555B00BA31C9 /* MASConstraint+Private.h */,
+				4CE008E11948555B00BA31C9 /* MASConstraint.h */,
+				4CE008E21948555B00BA31C9 /* MASConstraint.m */,
+				4CE008E31948555B00BA31C9 /* MASConstraintMaker.h */,
+				4CE008E41948555B00BA31C9 /* MASConstraintMaker.m */,
+				4CE008E51948555B00BA31C9 /* MASLayoutConstraint.h */,
+				4CE008E61948555B00BA31C9 /* MASLayoutConstraint.m */,
+				4CE008E71948555B00BA31C9 /* Masonry.h */,
+				4CE008E81948555B00BA31C9 /* MASUtilities.h */,
+				4CE008E91948555B00BA31C9 /* MASViewAttribute.h */,
+				4CE008EA1948555B00BA31C9 /* MASViewAttribute.m */,
+				4CE008EB1948555B00BA31C9 /* MASViewConstraint.h */,
+				4CE008EC1948555B00BA31C9 /* MASViewConstraint.m */,
+				4CE008ED1948555B00BA31C9 /* NSArray+MASAdditions.h */,
+				4CE008EE1948555B00BA31C9 /* NSArray+MASAdditions.m */,
+				4CE008EF1948555B00BA31C9 /* NSArray+MASShorthandAdditions.h */,
+				4CE008F01948555B00BA31C9 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				4CE008F11948555B00BA31C9 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				4CE008F21948555B00BA31C9 /* View+MASAdditions.h */,
+				4CE008F31948555B00BA31C9 /* View+MASAdditions.m */,
+				4CE008F41948555B00BA31C9 /* View+MASShorthandAdditions.h */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		4CE008FE1948580600BA31C9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4CE008DD1948555B00BA31C9 /* Masonry */,
+				4CFB9F2B19489BE30049E694 /* NSDate+CWDatePicker.h */,
+				4CFB9F2C19489BE40049E694 /* NSDate+CWDatePicker.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +351,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CFB9F2D19489BE40049E694 /* NSDate+CWDatePicker.m in Sources */,
+				4CE008FB1948555B00BA31C9 /* NSArray+MASAdditions.m in Sources */,
+				4CE008FA1948555B00BA31C9 /* MASViewConstraint.m in Sources */,
 				4CE008AE1948533800BA31C9 /* AppDelegate.m in Sources */,
+				4CE008F71948555B00BA31C9 /* MASConstraintMaker.m in Sources */,
+				4CE008FD1948555B00BA31C9 /* View+MASAdditions.m in Sources */,
+				4CE008D31948537200BA31C9 /* CWDatePicker.m in Sources */,
+				4CE008F61948555B00BA31C9 /* MASConstraint.m in Sources */,
+				4CE008D51948537200BA31C9 /* CWDatePickerRow.m in Sources */,
+				4CE008F91948555B00BA31C9 /* MASViewAttribute.m in Sources */,
+				4CE008FC1948555B00BA31C9 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				4CE008AA1948533800BA31C9 /* main.m in Sources */,
+				4CE008F51948555B00BA31C9 /* MASCompositeConstraint.m in Sources */,
+				4CE008F81948555B00BA31C9 /* MASLayoutConstraint.m in Sources */,
+				4CE008D41948537200BA31C9 /* CWDatePickerCell.m in Sources */,
+				4CE008D9194853BB00BA31C9 /* DatePickerExampleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +565,7 @@
 				4CE008C81948533800BA31C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CE008C91948533800BA31C9 /* Build configuration list for PBXNativeTarget "CWDatePickerTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +574,7 @@
 				4CE008CB1948533800BA31C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

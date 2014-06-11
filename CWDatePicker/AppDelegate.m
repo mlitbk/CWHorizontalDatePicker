@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DatePickerExampleViewController.h"
 
 @implementation AppDelegate
 
@@ -15,6 +16,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    DatePickerExampleViewController *viewController = [[DatePickerExampleViewController alloc] init];
+    self.window.rootViewController = viewController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
