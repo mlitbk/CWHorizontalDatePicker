@@ -30,9 +30,6 @@ static CGFloat const dateLabelOffset = 25;
     CWDatePickerRow *_monthRow;
     CWDatePickerRow *_yearRow;
     
-    UIImageView *_arrow_up;
-    UIImageView *_arrow_down;
-    
     NSString *_dateLabelString;
     NSUInteger _startYear;
     NSUInteger _endYear;
@@ -84,32 +81,6 @@ static CGFloat const dateLabelOffset = 25;
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_dayRow]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_dayRow)]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_monthRow]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_monthRow)]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_yearRow]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_yearRow)]];
-    /*
-    [_dateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.mas_left).with.offset(dateLabelOffset);
-        make.top.equalTo(self.mas_top).with.offset(dayPickerRowsSpacing);
-    }];
-    
-    [_dayRow mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.equalTo([NSNumber numberWithFloat:dayPickerRowHeight]);
-        make.width.equalTo(self.mas_width);
-        make.top.equalTo(_dateLabel.mas_bottom).with.offset(dayPickerRowsSpacing);
-        make.left.equalTo(self.mas_left);
-    }];
-    
-    [_monthRow mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.equalTo([NSNumber numberWithFloat:dayPickerRowHeight]);
-        make.width.equalTo(self.mas_width);
-        make.top.equalTo(_dayRow.mas_bottom).with.offset(dayPickerRowsSpacing);
-        make.left.equalTo(self.mas_left);
-    }];
-    
-    [_yearRow mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.equalTo([NSNumber numberWithFloat:dayPickerRowHeight]);
-        make.width.equalTo(self.mas_width);
-        make.top.equalTo(_monthRow.mas_bottom).with.offset(dayPickerRowsSpacing);
-        make.left.equalTo(self.mas_left);
-    }];*/
 }
 
 - (void)updateDateLabel {
