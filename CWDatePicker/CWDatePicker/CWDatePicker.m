@@ -8,7 +8,6 @@
 
 #import "CWDatePicker.h"
 #import "CWDatePickerRow.h"
-#import "Masonry.h"
 #import "NSDate+CWDatePicker.h"
 
 #define kDateLabelFont [UIFont boldSystemFontOfSize:18]
@@ -58,6 +57,11 @@ static CGFloat const dateLabelOffset = 25;
         _dateLabel.text = dateLabelString;
         _dateLabel.textColor = [UIColor blackColor];
         _dateLabel.font = kDateLabelFont;
+        
+        _dateLabel.translatesAutoresizingMaskIntoConstraints = NO;
+        _dayRow.translatesAutoresizingMaskIntoConstraints = NO;
+        _monthRow.translatesAutoresizingMaskIntoConstraints = NO;
+        _yearRow.translatesAutoresizingMaskIntoConstraints = NO;
 
         [self addSubview:_dateLabel];
         [self addSubview:_dayRow];
@@ -72,6 +76,15 @@ static CGFloat const dateLabelOffset = 25;
 }
 
 - (void)setupContraints {
+    NSDictionary *metrics = @{@"rowHeight": [NSNumber numberWithFloat:dayPickerRowHeight],
+                              @"spacing": [NSNumber numberWithFloat:dayPickerRowsSpacing]};
+    
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_dateLabel(rowHeight)]-(spacing@750)-[_dayRow(rowHeight)]-spacing-[_monthRow(rowHeight)]-spacing-[_yearRow(rowHeight)]->=0-|" options:NSLayoutFormatAlignAllCenterX metrics:metrics views:NSDictionaryOfVariableBindings(_dateLabel, _dayRow, _monthRow, _yearRow)]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-dateOffset-[_dateLabel]-|" options:0 metrics:@{@"dateOffset": [NSNumber numberWithFloat:dateLabelOffset]} views:NSDictionaryOfVariableBindings(_dateLabel)]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_dayRow]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_dayRow)]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_monthRow]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_monthRow)]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_yearRow]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_yearRow)]];
+    /*
     [_dateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left).with.offset(dateLabelOffset);
         make.top.equalTo(self.mas_top).with.offset(dayPickerRowsSpacing);
@@ -96,17 +109,7 @@ static CGFloat const dateLabelOffset = 25;
         make.width.equalTo(self.mas_width);
         make.top.equalTo(_monthRow.mas_bottom).with.offset(dayPickerRowsSpacing);
         make.left.equalTo(self.mas_left);
-    }];
-    
-    [_arrow_down mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_dayRow.mas_top);
-        make.centerX.equalTo(_dayRow.mas_centerX);
-    }];
-    
-    [_arrow_up mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(_yearRow.mas_bottom);
-        make.centerX.equalTo(_yearRow.mas_centerX);
-    }];
+    }];*/
 }
 
 - (void)updateDateLabel {

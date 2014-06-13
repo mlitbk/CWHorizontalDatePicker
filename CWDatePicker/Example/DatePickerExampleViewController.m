@@ -8,7 +8,6 @@
 
 #import "DatePickerExampleViewController.h"
 #import "CWDatePicker.h"
-#import "Masonry.h"
 #import "NSDate+CWDatePicker.h"
 
 @interface DatePickerExampleViewController ()
@@ -33,31 +32,19 @@
         [_doneButton setBackgroundColor:[UIColor redColor]];
         [_doneButton addTarget:self action:@selector(doneAction) forControlEvents:UIControlEventTouchUpInside];
         
+        _startDatePicker.translatesAutoresizingMaskIntoConstraints = NO;
+        _endDatePicker.translatesAutoresizingMaskIntoConstraints = NO;
+        _doneButton.translatesAutoresizingMaskIntoConstraints = NO;
+        
         [self.view setBackgroundColor:[UIColor colorWithRed:243/255.0f green:251/255.0f blue:226/255.0f alpha:1.0f]];
         [self.view addSubview:_startDatePicker];
         [self.view addSubview:_endDatePicker];
         [self.view addSubview:_doneButton];
         
-        [_startDatePicker mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.view.mas_top).with.offset(20);
-            make.left.equalTo(self.view.mas_left);
-            make.width.equalTo(self.view.mas_width);
-            make.height.equalTo(@180);
-        }];
-        
-        [_endDatePicker mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(_startDatePicker.mas_bottom).with.offset(20);
-            make.left.equalTo(self.view.mas_left);
-            make.width.equalTo(self.view.mas_width);
-            make.height.equalTo(@180);
-        }];
-        
-        [_doneButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(_endDatePicker.mas_bottom).with.offset(20);
-            make.centerX.equalTo(self.view.mas_centerX);
-            make.width.equalTo(@100);
-            make.height.equalTo(@30);
-        }];
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_startDatePicker(==190)]-[_endDatePicker(==190)]-[_doneButton(==30)]->=0-|" options:NSLayoutFormatAlignAllCenterX metrics:nil views:NSDictionaryOfVariableBindings(_startDatePicker, _endDatePicker, _doneButton)]];
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_startDatePicker]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_startDatePicker)]];
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_endDatePicker]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_endDatePicker)]];
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"[_doneButton(==100)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_doneButton)]];
     }
     return self;
 }

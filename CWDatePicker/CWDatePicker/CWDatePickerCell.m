@@ -7,7 +7,6 @@
 //
 
 #import "CWDatePickerCell.h"
-#import "Masonry.h"
 
 #define kColorActive [UIColor blackColor]
 #define kColorNotActive [UIColor grayColor]
@@ -47,11 +46,12 @@
     _label.text = data;
     _label.tag = 998;
     
+    _label.translatesAutoresizingMaskIntoConstraints = NO;
+    
     [self.contentView addSubview:_label];
     
-    [_label mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.contentView);
-    }];
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_label]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_label)]];
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_label]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_label)]];
 }
 
 - (void)setupBorder {
@@ -62,14 +62,12 @@
     rightBorder.backgroundColor = [UIColor blackColor];
     rightBorder.tag = 997;
     
+    rightBorder.translatesAutoresizingMaskIntoConstraints = NO;
+    
     [self.contentView addSubview:rightBorder];
     
-    [rightBorder mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.equalTo(@1);
-        make.height.equalTo(self.contentView.mas_height);
-        make.right.equalTo(self.contentView.mas_right);
-        make.top.equalTo(self.contentView.mas_top);
-    }];
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[rightBorder(==1)]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(rightBorder)]];
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[rightBorder]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(rightBorder)]];
 }
 
 - (void)removeBorder {

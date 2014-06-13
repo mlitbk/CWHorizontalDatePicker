@@ -6,6 +6,11 @@
 //  Copyright (c) 2014 Michael Litvak. All rights reserved.
 //
 
+/* some of this is code is from NSDate-Extensions by Erica Sadun, thanks
+ Erica Sadun, http://ericasadun.com
+ iPhone Developer's Cookbook 3.x and beyond
+ */
+
 #import <Foundation/Foundation.h>
 
 @interface NSDate (CWDatePicker)

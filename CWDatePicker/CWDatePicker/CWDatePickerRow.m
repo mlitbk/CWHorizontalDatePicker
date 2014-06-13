@@ -8,7 +8,6 @@
 
 #import "CWDatePickerRow.h"
 #import "CWDatePickerCell.h"
-#import "Masonry.h"
 
 static CGFloat const kCellWidth = 50;
 static CGFloat const kCellHeight = 40;
@@ -51,11 +50,12 @@ static CGFloat const kCellHeight = 40;
         
         self.backgroundColor = [UIColor clearColor];
         
+        _collectionView.translatesAutoresizingMaskIntoConstraints = NO;
+        
         [self addSubview:_collectionView];
         
-        [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(self);
-        }];
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_collectionView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_collectionView)]];
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_collectionView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_collectionView)]];
     }
     return self;
 }
